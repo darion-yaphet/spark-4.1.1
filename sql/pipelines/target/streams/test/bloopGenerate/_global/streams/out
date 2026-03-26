@@ -1,0 +1,4 @@
+[debug] [pipelines-test] Classpath dependencies List(sql-api-test, core-test, catalyst-test, tags-test, sql-test)
+[debug] [pipelines-test] Dependencies from configurations List(pipelines)
+[debug] Bloop wrote the configuration of project 'pipelines-test' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/pipelines-test.json'
+[success] Generated .bloop/pipelines-test.json

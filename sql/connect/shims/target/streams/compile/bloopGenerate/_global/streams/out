@@ -1,0 +1,4 @@
+[debug] [connect-shims] Classpath dependencies List()
+[debug] [connect-shims] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'connect-shims' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect-shims.json'
+[success] Generated .bloop/connect-shims.json

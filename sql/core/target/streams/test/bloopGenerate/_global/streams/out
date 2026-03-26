@@ -1,0 +1,4 @@
+[debug] [sql-test] Classpath dependencies List(sql-api-test, core-test, catalyst-test, common-utils-test, tags-test)
+[debug] [sql-test] Dependencies from configurations List(sql)
+[debug] Bloop wrote the configuration of project 'sql-test' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/sql-test.json'
+[success] Generated .bloop/sql-test.json

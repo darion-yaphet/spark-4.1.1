@@ -1,0 +1,4 @@
+[debug] [connect] Classpath dependencies List(sql, core, tags, connect-common, mllib, catalyst, pipelines)
+[debug] [connect] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'connect' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect.json'
+[success] Generated .bloop/connect.json

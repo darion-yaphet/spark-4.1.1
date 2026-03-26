@@ -1,0 +1,4 @@
+[debug] Invalidating cache (input changed)
+[info] Compiling 1 protobuf files to /Users/darion.yaphet/source/spark-4.1.1/sql/core/target/generated-sources
+[debug] protoc options:
+[debug] Compiling schema /Users/darion.yaphet/source/spark-4.1.1/sql/core/src/main/protobuf/org/apache/spark/sql/execution/streaming/StateMessage.proto

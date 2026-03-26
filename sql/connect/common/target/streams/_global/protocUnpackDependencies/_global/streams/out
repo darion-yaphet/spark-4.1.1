@@ -1,0 +1,13 @@
+[debug] Extracted from /Users/darion.yaphet/.m2/repository/com/google/protobuf/protobuf-java/4.33.0/protobuf-java-4.33.0.jar:
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/empty.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/timestamp.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/field_mask.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/type.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/api.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/descriptor.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/java_features.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/wrappers.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/struct.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/duration.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/source_context.proto
+[debug]  * /Users/darion.yaphet/source/spark-4.1.1/sql/connect/common/target/protobuf_external/google/protobuf/any.proto

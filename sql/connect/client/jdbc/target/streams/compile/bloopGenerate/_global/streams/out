@@ -1,0 +1,4 @@
+[debug] [connect-client-jdbc] Classpath dependencies List(connect-client-jvm)
+[debug] [connect-client-jdbc] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'connect-client-jdbc' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect-client-jdbc.json'
+[success] Generated .bloop/connect-client-jdbc.json

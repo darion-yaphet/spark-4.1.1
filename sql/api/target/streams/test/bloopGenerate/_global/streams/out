@@ -1,0 +1,4 @@
+[debug] [sql-api-test] Classpath dependencies List()
+[debug] [sql-api-test] Dependencies from configurations List(sql-api)
+[debug] Bloop wrote the configuration of project 'sql-api-test' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/sql-api-test.json'
+[success] Generated .bloop/sql-api-test.json

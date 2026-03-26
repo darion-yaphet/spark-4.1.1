@@ -1,0 +1,4 @@
+[debug] [sql] Classpath dependencies List(core, catalyst, tags, sketch)
+[debug] [sql] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'sql' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/sql.json'
+[success] Generated .bloop/sql.json

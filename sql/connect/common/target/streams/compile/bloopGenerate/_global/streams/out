@@ -1,0 +1,4 @@
+[debug] [connect-common] Classpath dependencies List(sql-api)
+[debug] [connect-common] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'connect-common' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect-common.json'
+[success] Generated .bloop/connect-common.json

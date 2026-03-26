@@ -1,0 +1,4 @@
+[debug] [connect-client-jvm-test] Classpath dependencies List(common-utils-test, sql-api-test, tags-test)
+[debug] [connect-client-jvm-test] Dependencies from configurations List(connect-client-jvm)
+[debug] Bloop wrote the configuration of project 'connect-client-jvm-test' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect-client-jvm-test.json'
+[success] Generated .bloop/connect-client-jvm-test.json

@@ -1,0 +1,4 @@
+[debug] [connect-client-jvm] Classpath dependencies List(connect-shims, connect-common, sketch, sql-api)
+[debug] [connect-client-jvm] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'connect-client-jvm' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect-client-jvm.json'
+[success] Generated .bloop/connect-client-jvm.json

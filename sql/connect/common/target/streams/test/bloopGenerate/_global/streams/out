@@ -1,0 +1,4 @@
+[debug] [connect-common-test] Classpath dependencies List(tags-test)
+[debug] [connect-common-test] Dependencies from configurations List(connect-common)
+[debug] Bloop wrote the configuration of project 'connect-common-test' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/connect-common-test.json'
+[success] Generated .bloop/connect-common-test.json

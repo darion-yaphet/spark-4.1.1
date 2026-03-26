@@ -1,0 +1,34 @@
+[error] error(50): SqlBaseLexer.g4:23:31: syntax error: '）和' came as a complete surprise to me
+[error] error(50): SqlBaseLexer.g4:23:34: syntax error: missing SEMI at 'Optimizer'
+[error] error(50): SqlBaseLexer.g4:23:44: syntax error: missing COLON at 'Hints（' while matching a lexer rule
+[error] error(50): SqlBaseLexer.g4:25:0: syntax error: 'lexer' came as a complete surprise to me while matching a lexer rule
+[error] error(50): SqlBaseLexer.g4:27:9: syntax error: '{\n  /**\n   * When true, parser should throw ParseException for unclosed bracketed comment.\n   * 为 true 时，解析器应针对未闭合的块注释抛出 ParseException。\n   */\n  public boolean has_unclosed_bracketed_comment = false;\n\n  /**\n   * Verify whether current token is a valid decimal token (which contains dot).\n   * Returns true if the character that follows the token is not a digit or letter or underscore.\n   * 验证当前标记是否为有效的十进制标记（包含小数点）。\n   * 如果标记后的字符不是数字、字母或下划线，则返回 true。\n   *\n   * For example:\n   * 示例：\n   * For char stream "2.3", "2." is not a valid decimal token, because it is followed by digit '3'.\n   * 对于字符流 "2.3"，"2." 不是有效的十进制标记，因为它后面跟着数字 '3'。\n   * For char stream "2.3_", "2.3" is not a valid decimal token, because it is followed by '_'.\n   * 对于字符流 "2.3_"，"2.3" 不是有效的十进制标记，因为它后面跟着 '_'。\n   * For char stream "2.3W", "2.3" is not a valid decimal token, because it is followed by 'W'.\n   * 对于字符流 "2.3W"，"2.3" 不是有效的十进制标记，因为它后面跟着 'W'。\n   * For char stream "12.0D 34.E2+0.12 "  12.0D is a valid decimal token because it is followed\n   * by a space. 34.E2 is a valid decimal token because it is followed by symbol '+'\n   * which is not a digit or letter or underscore.\n   * 对于字符流 "12.0D 34.E2+0.12 "，12.0D 是有效的十进制标记，因为它后面跟着一个空格。\n   * 34.E2 是有效的十进制标记，因为它后面跟着符号 '+'，该符号既不是数字、字母也不是下划线。\n   */\n  public boolean isValidDecimal() {\n    int nextChar = _input.LA(1);\n    if (nextChar >= 'A' && nextChar <= 'Z' || nextChar >= '0' && nextChar <= '9' ||\n      nextChar == '_') {\n      return false;\n    } else {\n      return true;\n    }\n  }\n\n  /**\n   * This method will be called when we see '/*' and try to match it as a bracketed comment.\n   * If the next character is '+', it should be parsed as hint later, and we cannot match\n   * it as a bracketed comment.\n   * 当捕获到 '/*' 并尝试将其匹配为块注释时，将调用此方法。\n   * 如果下一个字符是 '+'，则后续应将其解析为 Hint，因此我们不能将其匹配为块注释。\n   *\n   * Returns true if the next character is '+'.\n   * 如果下一个字符是 '+'，则返回 true。\n   */\n  public boolean isHint() {\n    int nextChar = _input.LA(1);\n    if (nextChar == '+') {\n      return true;\n    } else {\n      return false;\n    }\n  }\n\n  /**\n   * This method will be called when the character stream ends and try to find out the\n   * unclosed bracketed comment.\n   * If the method be called, it means the end of the entire character stream match,\n   * and we set the flag and fail later.\n   * 当字符流结束时调用此方法，以查找到未闭合的块注释。\n   * 如果调用此方法，意味着整个字符流匹配结束，我们将设置标志位并在稍后报错。\n   */\n  public void markUnclosedComment() {\n    has_unclosed_bracketed_comment = true;\n  }\n\n  /**\n   * When greater than zero, it's in the middle of parsing ARRAY/MAP/STRUCT type.\n   * 当大于零时，表示当前正处于解析 ARRAY/MAP/STRUCT 类型的过程中。\n   */\n  public int complex_type_level_counter = 0;\n\n  /**\n   * Increase the counter by one when hits KEYWORD 'ARRAY', 'MAP', 'STRUCT'.\n   * 当遇到关键字 'ARRAY', 'MAP', 'STRUCT' 时，计数器加一。\n   */\n  public void incComplexTypeLevelCounter() {\n    complex_type_level_counter++;\n  }\n\n  /**\n   * Decrease the counter by one when hits close tag '>' && the counter greater than zero\n   * which means we are in the middle of complex type parsing. Otherwise, it's a dangling\n   * GT token and we do nothing.\n   * 当遇到闭合标签 '>' 且计数器大于零（意味着处于复杂类型解析中）时，计数器减一。\n   * 否则，它只是一个孤立的大于号标记，不做处理。\n   */\n  public void decComplexTypeLevelCounter() {\n    if (complex_type_level_counter > 0) complex_type_level_counter--;\n  }\n\n  /**\n   * If the counter is zero, it's a shift right operator. It can be closing tags of an complex\n   * type definition, such as MAP<INT, ARRAY<INT>>.\n   * 如果计数器为零，则为右移操作符。它也可以是复杂类型定义的闭合标签，例如 MAP<INT, ARRAY<INT>>。\n   */\n  public boolean isShiftRightOperator() {\n    return complex_type_level_counter == 0 ? true : false;\n  }\n}' came as a complete surprise to me while matching rule preamble
+[error] java.lang.RuntimeException: Antlr4 failed with exit code 1
+[error] 	at scala.sys.package$.error(package.scala:30)
+[error] 	at com.simplytyped.Antlr4Plugin$.runAntlr(Antlr4Plugin.scala:85)
+[error] 	at com.simplytyped.Antlr4Plugin$.$anonfun$antlr4GeneratorTask$2(Antlr4Plugin.scala:61)
+[error] 	at sbt.util.FileFunction$.$anonfun$cached$1(FileFunction.scala:81)
+[error] 	at sbt.util.FileFunction$.$anonfun$cached$4(FileFunction.scala:154)
+[error] 	at sbt.util.Difference.apply(Tracked.scala:415)
+[error] 	at sbt.util.Difference.apply(Tracked.scala:395)
+[error] 	at sbt.util.FileFunction$.$anonfun$cached$3(FileFunction.scala:150)
+[error] 	at sbt.util.Difference.apply(Tracked.scala:415)
+[error] 	at sbt.util.Difference.apply(Tracked.scala:390)
+[error] 	at sbt.util.FileFunction$.$anonfun$cached$2(FileFunction.scala:149)
+[error] 	at com.simplytyped.Antlr4Plugin$.$anonfun$antlr4GeneratorTask$1(Antlr4Plugin.scala:64)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
+[error] 	at sbt.Execute.work(Execute.scala:292)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:840)
+[error] (sql-api / Antlr4 / antlr4Generate) Antlr4 failed with exit code 1

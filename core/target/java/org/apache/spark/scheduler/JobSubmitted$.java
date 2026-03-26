@@ -1,0 +1,8 @@
+package org.apache.spark.scheduler;
+public  class JobSubmitted$ extends scala.runtime.AbstractFunction8<java.lang.Object, org.apache.spark.rdd.RDD<?>, scala.Function2<org.apache.spark.TaskContext, scala.collection.Iterator<java.lang.Object>, ?>, int[], org.apache.spark.util.CallSite, org.apache.spark.scheduler.JobListener, org.apache.spark.JobArtifactSet, java.util.Properties, org.apache.spark.scheduler.JobSubmitted> implements java.io.Serializable {
+  /**
+   * Static reference to the singleton instance of this Scala object.
+   */
+  public static final JobSubmitted$ MODULE$ = null;
+  public   JobSubmitted$ ()  { throw new RuntimeException(); }
+}

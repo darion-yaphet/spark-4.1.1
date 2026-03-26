@@ -1,0 +1,33 @@
+package org.apache.spark.deploy.master;
+public  interface MasterSuiteBase extends org.scalatest.matchers.must.Matchers, org.scalatest.concurrent.Eventually, org.scalatest.PrivateMethodTester, org.scalatest.BeforeAndAfter {
+  public  scala.util.matching.Regex WORKER_LINK_RE ()  ;
+  public  org.scalatest.PrivateMethodTester.PrivateMethod<org.apache.spark.deploy.master.ApplicationInfo> _createApplication ()  ;
+  public  org.scalatest.PrivateMethodTester.PrivateMethod<org.apache.spark.deploy.DriverDescription> _maybeUpdateAppName ()  ;
+  public  org.scalatest.PrivateMethodTester.PrivateMethod<java.lang.String> _newApplicationId ()  ;
+  public  org.scalatest.PrivateMethodTester.PrivateMethod<java.lang.String> _newDriverId ()  ;
+  public  org.scalatest.PrivateMethodTester.PrivateMethod<scala.runtime.BoxedUnit> _schedule ()  ;
+  public  org.scalatest.PrivateMethodTester.PrivateMethod<scala.collection.mutable.ArrayBuffer<org.apache.spark.deploy.master.DriverInfo>> _waitingDrivers ()  ;
+  public  void basicScheduling (boolean spreadOut)  ;
+  public  void basicSchedulingWithMoreMemory (boolean spreadOut)  ;
+  public  scala.collection.mutable.HashSet<org.apache.spark.deploy.master.DriverInfo> getDrivers (org.apache.spark.deploy.master.Master master)  ;
+  public  scala.Enumeration.Value getState (org.apache.spark.deploy.master.Master master)  ;
+  public  org.apache.spark.deploy.master.Master makeAliveMaster (org.apache.spark.SparkConf conf)  ;
+  public  org.apache.spark.deploy.master.ApplicationInfo makeAppInfo (int memoryPerExecutorMb, scala.Option<java.lang.Object> coresPerExecutor, scala.Option<java.lang.Object> maxCores, scala.collection.immutable.Map<java.lang.String, java.lang.Object> customResources, scala.Option<java.lang.Object> initialExecutorLimit)  ;
+  public  org.apache.spark.deploy.master.Master makeMaster (org.apache.spark.SparkConf conf)  ;
+  public  org.apache.spark.deploy.master.WorkerInfo makeWorkerInfo (int memoryMb, int cores)  ;
+  public  void scheduleExecutorsForAppWithMultiRPs (boolean withMaxCores)  ;
+  public  int[] scheduleExecutorsOnWorkers (org.apache.spark.deploy.master.Master master, org.apache.spark.deploy.master.ApplicationInfo appInfo, org.apache.spark.deploy.master.WorkerInfo[] workerInfos, boolean spreadOut)  ;
+  public  void schedulingWithCoresPerExecutor (boolean spreadOut)  ;
+  public  void schedulingWithCoresPerExecutorAndMaxCores (boolean spreadOut)  ;
+  public  void schedulingWithEverything (boolean spreadOut)  ;
+  public  void schedulingWithExecutorLimit (boolean spreadOut)  ;
+  public  void schedulingWithExecutorLimitAndCoresPerExecutor (boolean spreadOut)  ;
+  public  void schedulingWithExecutorLimitAndMaxCores (boolean spreadOut)  ;
+  public  void schedulingWithMaxCores (boolean spreadOut)  ;
+  public  void startExecutorsOnWorkers (org.apache.spark.deploy.master.Master master)  ;
+  public  void testWorkerDecommissioning (int numWorkers, int numWorkersExpectedToDecom, scala.collection.immutable.Seq<java.lang.String> hostnames)  ;
+  public  void verifyDrivers (boolean spreadOut, int answer1, int answer2, int answer3)  ;
+  public  void verifyStaticResourcesServedByProxy (java.lang.String html, java.lang.String proxyUrl)  ;
+  public  void verifyWorkerUI (java.lang.String masterHtml, java.lang.String masterUrl, java.lang.String reverseProxyUrl)  ;
+  public  org.apache.spark.deploy.master.WorkerInfo workerInfo ()  ;
+}

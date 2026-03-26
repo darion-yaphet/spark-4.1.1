@@ -1,0 +1,4 @@
+[debug] [core-test] Classpath dependencies List(launcher-test, common-utils-test, network-shuffle-test, tags-test, network-common-test)
+[debug] [core-test] Dependencies from configurations List(core)
+[debug] Bloop wrote the configuration of project 'core-test' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/core-test.json'
+[success] Generated .bloop/core-test.json

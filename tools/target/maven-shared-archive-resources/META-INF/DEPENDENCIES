@@ -1,0 +1,74 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Spark Project Tools
+
+
+From: 'an unknown organization'
+
+  - JLine Bundle (https://github.com/jline/jline3/jline) org.jline:jline:jar:3.29.0
+    License: The BSD License  (https://opensource.org/licenses/BSD-3-Clause)
+
+  - empty (http://nexus.sonatype.org/oss-repository-hosting.html/unused) org.spark-project.spark:unused:jar:1.0.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'java-diff-utils'
+
+  - java-diff-utils (https://github.com/java-diff-utils/java-diff-utils/java-diff-utils) io.github.java-diff-utils:java-diff-utils:jar:4.16
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'LAMP/EPFL' (https://lamp.epfl.ch/)
+
+  - Scala Compiler (https://www.scala-lang.org/) org.scala-lang:scala-compiler:jar:2.13.17
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Scala Library (https://www.scala-lang.org/) org.scala-lang:scala-library:jar:2.13.17
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Scala Reflect (https://www.scala-lang.org/) org.scala-lang:scala-reflect:jar:2.13.17
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+
+From: 'org.clapper' (http://software.clapper.org/classutil/)
+
+  - classutil (http://software.clapper.org/classutil/) org.clapper:classutil_2.13:jar:1.5.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+
+From: 'org.clapper' (http://software.clapper.org/grizzled-scala/)
+
+  - grizzled-scala (http://software.clapper.org/grizzled-scala/) org.clapper:grizzled-scala_2.13:jar:4.9.3
+    License: BSD  (http://software.clapper.org/grizzled-scala/license.html)
+
+
+From: 'org.scala-lang.modules' (http://www.scala-lang.org/)
+
+  - scala-collection-compat (http://www.scala-lang.org/) org.scala-lang.modules:scala-collection-compat_2.13:bundle:2.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+
+From: 'OW2' (http://www.ow2.org/)
+
+  - asm (http://asm.ow2.io/) org.ow2.asm:asm:jar:9.9
+    License: BSD-3-Clause  (https://asm.ow2.io/license.html)
+
+  - asm-analysis (http://asm.ow2.io/) org.ow2.asm:asm-analysis:jar:9.9
+    License: BSD-3-Clause  (https://asm.ow2.io/license.html)
+
+  - asm-commons (http://asm.ow2.io/) org.ow2.asm:asm-commons:jar:9.9
+    License: BSD-3-Clause  (https://asm.ow2.io/license.html)
+
+  - asm-tree (http://asm.ow2.io/) org.ow2.asm:asm-tree:jar:9.9
+    License: BSD-3-Clause  (https://asm.ow2.io/license.html)
+
+  - asm-util (http://asm.ow2.io/) org.ow2.asm:asm-util:jar:9.9
+    License: BSD-3-Clause  (https://asm.ow2.io/license.html)
+
+
+
+
+

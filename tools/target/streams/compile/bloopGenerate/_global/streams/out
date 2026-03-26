@@ -1,0 +1,4 @@
+[debug] [tools] Classpath dependencies List()
+[debug] [tools] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'tools' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/tools.json'
+[success] Generated .bloop/tools.json

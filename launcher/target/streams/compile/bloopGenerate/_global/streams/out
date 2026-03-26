@@ -1,0 +1,4 @@
+[debug] [launcher] Classpath dependencies List(tags)
+[debug] [launcher] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'launcher' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/launcher.json'
+[success] Generated .bloop/launcher.json

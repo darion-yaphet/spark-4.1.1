@@ -1,0 +1,4 @@
+[debug] [streaming] Classpath dependencies List(core, tags)
+[debug] [streaming] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'streaming' to '/Users/darion.yaphet/source/spark-4.1.1/.bloop/streaming.json'
+[success] Generated .bloop/streaming.json
